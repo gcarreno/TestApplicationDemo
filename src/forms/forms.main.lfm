@@ -1,0 +1,66 @@
+object frmMain: TfrmMain
+  Left = 390
+  Height = 409
+  Top = 250
+  Width = 805
+  Caption = 'Application Config Demo'
+  ClientHeight = 409
+  ClientWidth = 805
+  Menu = mnuMain
+  OnCreate = FormCreate
+  SessionProperties = 'Top;Left;Height;Width;WindowState;psMain.Position'
+  object memInfo: TMemo
+    Left = 4
+    Height = 401
+    Top = 4
+    Width = 797
+    Align = alClient
+    BorderSpacing.Around = 4
+    Lines.Strings = (
+      'As you can see, I''ve dropped an '
+      'INIPropStorage on the Form (Misc Tab).'
+      ''
+      'This automates the Loading and Saving '
+      'of config value, so you don''t have to do it'
+      'by hand, like your doing it now.'
+      ''
+      'It acomplishes it by saving and loading what'
+      'you tell it to under Form.SessionPropperties.'
+      ''
+      'Have a look at the comments on Form.Create'
+      'for more info on how to configure filename'
+      'and all that.'
+      ''
+      'You can also choose XMLPropStorage and'
+      'JSONPropStorage. As you can see for your-'
+      'self, you can do it in XML or JSON too.'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object aclMain: TActionList
+    Left = 464
+    Top = 288
+    object actFileExit: TFileExit
+      Category = 'File'
+      Caption = 'E&xit'
+      Hint = 'Exit'
+    end
+  end
+  object mnuMain: TMainMenu
+    Left = 528
+    Top = 288
+    object mnuFile: TMenuItem
+      Caption = '&File'
+      object mnuFileExit: TMenuItem
+        Action = actFileExit
+      end
+    end
+  end
+  object iniConfigMain: TIniPropStorage
+    StoredValues = <>
+    Left = 496
+    Top = 344
+  end
+end
