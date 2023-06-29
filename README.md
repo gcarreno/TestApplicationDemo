@@ -8,3 +8,4 @@ It includes:
 - `TINIPropStorage` for `TForm.SessionProperties` property storage
 - `TFileExit` action with different shortcuts for Windows and Linux
 - The use of `GetAppConfigFile()` to get the app's default file customised for Linux/Windows
+- A way to have different short cuts for exit in Linux(CTRL+Q) and Windows(ALT+X)

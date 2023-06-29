@@ -34,6 +34,9 @@ object frmMain: TfrmMain
       'You can also choose XMLPropStorage and'
       'JSONPropStorage. As you can see for your-'
       'self, you can do it in XML or JSON too.'
+      ''
+      'I''m also including a way to have different'
+      'short cuts for the exit action.'
     )
     ReadOnly = True
     ScrollBars = ssAutoVertical
