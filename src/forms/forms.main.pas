@@ -5,8 +5,19 @@ unit Forms.Main;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ActnList, Menus,
-  StdActns, IniPropStorage, ExtCtrls, StdCtrls;
+  Classes
+, SysUtils
+, Forms
+, Controls
+, Graphics
+, Dialogs
+, ActnList
+, Menus
+, StdActns
+, IniPropStorage
+, ExtCtrls
+, StdCtrls
+;
 
 type
 
@@ -34,7 +45,8 @@ var
 implementation
 
 uses
-  LCLType;
+  LCLType
+;
 
 {$R *.lfm}
 

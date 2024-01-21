@@ -9,6 +9,7 @@ object frmMain: TfrmMain
   Menu = mnuMain
   OnCreate = FormCreate
   SessionProperties = 'Top;Left;Height;Width;WindowState;psMain.Position'
+  LCLVersion = '3.0.0.3'
   object memInfo: TMemo
     Left = 4
     Height = 401
